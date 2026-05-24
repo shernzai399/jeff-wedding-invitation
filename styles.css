@@ -219,53 +219,11 @@ h2 {
   line-height: 1;
 }
 
-.schedule-section,
 .details-section,
 .host-section {
   background: linear-gradient(180deg, var(--paper), var(--paper-soft));
 }
 
-.timeline {
-  display: grid;
-  gap: 26px;
-  margin-top: 34px;
-}
-
-.timeline article {
-  position: relative;
-  display: grid;
-  justify-items: center;
-  gap: 5px;
-}
-
-.timeline article:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 48px;
-  width: 1px;
-  height: 26px;
-  background: var(--line);
-}
-
-.line-icon {
-  display: inline-grid;
-  width: 38px;
-  height: 38px;
-  place-items: center;
-  border: 1px solid rgba(139, 23, 38, 0.32);
-  border-radius: 50%;
-  color: var(--wine);
-  font-size: 0.75rem;
-  font-weight: 800;
-}
-
-.timeline strong {
-  color: var(--wine-dark);
-  font-family: "Cormorant Garamond", Georgia, serif;
-  font-size: 1.65rem;
-}
-
-.timeline p,
 .detail-block p {
   margin: 0;
   color: var(--muted);
