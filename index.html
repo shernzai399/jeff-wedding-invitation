@@ -13,16 +13,32 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <button class="music-button" id="musicButton" type="button" aria-label="Toggle music">♪</button>
+    <button class="music-button" id="musicButton" type="button" aria-label="Toggle music">Music</button>
 
     <main class="h5-invite">
       <section class="panel cover-panel" aria-labelledby="invite-title">
         <div class="cover-bg" role="img" aria-label="Elegant floral wedding invitation"></div>
         <div class="cover-shade"></div>
+        <div class="cover-frame" aria-hidden="true"></div>
         <div class="cover-content">
-          <p class="kicker">We Are Getting Married</p>
-          <h1 id="invite-title">Mr Jefferey<br />&amp;<br />Ms Ying Shya</h1>
-          <p class="cover-date">15.09.2026</p>
+          <div class="cover-seal" aria-hidden="true">
+            <span>J</span>
+            <span>&amp;</span>
+            <span>Y</span>
+          </div>
+          <p class="kicker">The Wedding Celebration of</p>
+          <h1 id="invite-title">
+            <span>Mr Jefferey</span>
+            <small>&amp;</small>
+            <span>Ms Ying Shya</span>
+          </h1>
+          <div class="cover-divider" aria-hidden="true"></div>
+          <p class="cover-date">15 September 2026</p>
+          <div class="cover-meta" aria-label="Main wedding details">
+            <span>Tuesday</span>
+            <span>7:30 PM</span>
+            <span>Bandar Bukit Raja</span>
+          </div>
           <a class="scroll-cue" href="#rsvp">Open Invitation</a>
         </div>
       </section>
