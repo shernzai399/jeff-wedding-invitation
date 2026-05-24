@@ -50,8 +50,8 @@ The host list at the bottom stores test responses only on the current device. It
 5. Keep it public unless you already know how to publish private GitHub Pages.
 6. On GitHub.com, open the repository settings.
 7. Go to `Pages`.
-8. Under `Build and deployment`, choose `Deploy from a branch`.
-9. Select branch `main` and folder `/root`.
+8. Under `Build and deployment`, choose `GitHub Actions`.
+9. Save if GitHub asks you to save.
 10. Save.
 
 After GitHub finishes publishing, your invite link will look similar to:
