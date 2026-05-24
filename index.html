@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Parisienne&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -15,91 +15,100 @@
   <body>
     <button class="music-button" id="musicButton" type="button" aria-label="Toggle music">Music</button>
 
-    <main class="h5-invite">
-      <section class="panel cover-panel" aria-labelledby="invite-title">
-        <div class="cover-bg" role="img" aria-label="Elegant floral wedding invitation"></div>
-        <div class="cover-shade"></div>
-        <div class="cover-frame" aria-hidden="true"></div>
-        <div class="cover-content">
-          <div class="cover-seal" aria-hidden="true">
-            <span>J</span>
-            <span>&amp;</span>
-            <span>Y</span>
+    <main class="memory-invite">
+      <section class="photo-hero" aria-labelledby="invite-title">
+        <div class="background-photo" aria-hidden="true"></div>
+        <div class="hero-card">
+          <div class="hero-photo" role="img" aria-label="Wedding couple invitation photo"></div>
+          <div class="torn torn-bottom" aria-hidden="true"></div>
+          <div class="hero-text">
+            <p class="overline">We Are Getting Married</p>
+            <h1 id="invite-title">
+              <span>Mr Jefferey</span>
+              <small>&amp;</small>
+              <span>Ms Ying Shya</span>
+            </h1>
+            <p class="date-mark">15.09.2026</p>
           </div>
-          <p class="kicker">The Wedding Celebration of</p>
-          <h1 id="invite-title">
-            <span>Mr Jefferey</span>
-            <small>&amp;</small>
-            <span>Ms Ying Shya</span>
-          </h1>
-          <div class="cover-divider" aria-hidden="true"></div>
-          <p class="cover-date">15 September 2026</p>
-          <div class="cover-meta" aria-label="Main wedding details">
-            <span>Tuesday</span>
-            <span>7:30 PM</span>
-            <span>Bandar Bukit Raja</span>
-          </div>
-          <a class="scroll-cue" href="#rsvp">Open Invitation</a>
         </div>
       </section>
 
-      <section class="panel intro-panel">
-        <p class="kicker">Invitation</p>
-        <h2>With joyful hearts, we invite you to celebrate our wedding.</h2>
-        <p class="soft-copy">
-          Your presence will make our day warmer, happier, and more meaningful.
-        </p>
-      </section>
-
-      <section class="panel countdown-panel" aria-labelledby="countdown-title">
-        <p class="kicker">Counting Down</p>
-        <h2 id="countdown-title">Our Big Day</h2>
+      <section class="paper-section countdown-section" aria-labelledby="countdown-title">
+        <p class="section-kicker">Counting Down</p>
+        <h2 id="countdown-title">Faltan</h2>
         <div class="countdown" id="countdown">
-          <span><strong id="days">0</strong>Days</span>
-          <span><strong id="hours">0</strong>Hours</span>
-          <span><strong id="minutes">0</strong>Minutes</span>
-          <span><strong id="seconds">0</strong>Seconds</span>
+          <span><strong id="days">0</strong>days</span>
+          <span><strong id="hours">0</strong>hours</span>
+          <span><strong id="minutes">0</strong>minutes</span>
+          <span><strong id="seconds">0</strong>seconds</span>
+        </div>
+
+        <p class="invite-copy">We are waiting for you to celebrate our wedding day.</p>
+
+        <div class="date-strip" aria-label="Wedding date">
+          <span>Tuesday</span>
+          <strong>15</strong>
+          <span>September</span>
         </div>
       </section>
 
-      <section class="panel details-panel" aria-label="Wedding details">
-        <div class="detail-card">
-          <span>Date</span>
-          <strong>Tuesday, 15 September 2026</strong>
-        </div>
-        <div class="detail-card">
-          <span>Time</span>
-          <strong>7:30 PM</strong>
-        </div>
-        <div class="detail-card">
-          <span>Venue</span>
-          <strong>No 18 Jalan Gamelan 3, Bandar Bukit Raja</strong>
-        </div>
-        <a
-          class="map-button"
-          href="https://maps.app.goo.gl/jNQiKobDNbttKvSEA"
-          target="_blank"
-          rel="noopener"
-        >
-          Open Map
-        </a>
-      </section>
+      <section class="paper-section schedule-section" aria-labelledby="schedule-title">
+        <p class="section-kicker">Program</p>
+        <h2 id="schedule-title">Wedding Timeline</h2>
 
-      <section class="panel gallery-panel" aria-label="Wedding photos">
-        <p class="kicker">Gallery</p>
-        <h2>Moments before forever</h2>
-        <div class="photo-stack">
-          <div class="photo-frame photo-frame--large"></div>
-          <div class="photo-frame"></div>
+        <div class="timeline">
+          <article>
+            <span class="line-icon">01</span>
+            <strong>7:30 PM</strong>
+            <p>Wedding ceremony</p>
+          </article>
+          <article>
+            <span class="line-icon">02</span>
+            <strong>8:00 PM</strong>
+            <p>Dinner reception</p>
+          </article>
+          <article>
+            <span class="line-icon">03</span>
+            <strong>9:00 PM</strong>
+            <p>Toast and celebration</p>
+          </article>
+          <article>
+            <span class="line-icon">04</span>
+            <strong>10:00 PM</strong>
+            <p>Photos and memories</p>
+          </article>
         </div>
       </section>
 
-      <section class="panel rsvp-panel" id="rsvp" aria-labelledby="rsvp-title">
-        <p class="kicker">RSVP</p>
+      <section class="photo-break" aria-label="Wedding photo section">
+        <div class="torn torn-top" aria-hidden="true"></div>
+        <div class="couple-photo" role="img" aria-label="Romantic wedding style photo"></div>
+        <div class="torn torn-bottom" aria-hidden="true"></div>
+      </section>
+
+      <section class="paper-section details-section" aria-label="Wedding details">
+        <div class="detail-block">
+          <p class="section-kicker">Ceremony</p>
+          <h2>7:30 PM</h2>
+          <p>No 18 Jalan Gamelan 3, Bandar Bukit Raja</p>
+          <a class="pill-button" href="https://maps.app.goo.gl/jNQiKobDNbttKvSEA" target="_blank" rel="noopener">
+            Open Map
+          </a>
+        </div>
+
+        <div class="detail-block">
+          <p class="section-kicker">Reception</p>
+          <h2>Dinner</h2>
+          <p>Tuesday, 15 September 2026</p>
+          <a class="pill-button" href="#rsvp">RSVP Now</a>
+        </div>
+      </section>
+
+      <section class="paper-section rsvp-section" id="rsvp" aria-labelledby="rsvp-title">
+        <p class="section-kicker">RSVP</p>
         <h2 id="rsvp-title">Are you coming?</h2>
-        <p class="soft-copy">
-          Please send your name and how many people will attend. WhatsApp will open with
-          the message ready.
+        <p class="invite-copy">
+          Send your name and number of guests. WhatsApp will open with the message ready.
         </p>
 
         <form class="rsvp-form" id="rsvpForm">
@@ -131,17 +140,16 @@
             ></textarea>
           </label>
 
-          <button class="primary-button" type="submit">Send RSVP by WhatsApp</button>
+          <button class="pill-button pill-button--wide" type="submit">Send RSVP by WhatsApp</button>
           <p class="form-note" id="formNote" role="status"></p>
         </form>
       </section>
 
-      <section class="panel host-panel" aria-labelledby="host-title">
-        <p class="kicker">Host List</p>
+      <section class="paper-section host-section" aria-labelledby="host-title">
+        <p class="section-kicker">Host List</p>
         <h2 id="host-title">Local RSVP Test List</h2>
-        <p class="soft-copy">
-          Real replies arrive in WhatsApp. This list only saves submissions made on this
-          device.
+        <p class="invite-copy">
+          Real replies arrive in WhatsApp. This list only saves submissions made on this device.
         </p>
 
         <div class="host-summary">
@@ -150,10 +158,8 @@
         </div>
 
         <div class="host-actions">
-          <button class="secondary-button" id="downloadCsv" type="button">Download CSV</button>
-          <button class="secondary-button secondary-button--danger" id="clearResponses" type="button">
-            Clear
-          </button>
+          <button class="outline-button" id="downloadCsv" type="button">Download CSV</button>
+          <button class="outline-button outline-button--danger" id="clearResponses" type="button">Clear</button>
         </div>
 
         <div class="response-list" id="responsesBody"></div>
