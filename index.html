@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr Jefferey & Ms Ying Shya Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="music-button" id="musicButton" type="button" aria-label="Toggle music">♪</button>
+
+    <main class="h5-invite">
+      <section class="panel cover-panel" aria-labelledby="invite-title">
+        <div class="cover-bg" role="img" aria-label="Elegant floral wedding invitation"></div>
+        <div class="cover-shade"></div>
+        <div class="cover-content">
+          <p class="kicker">We Are Getting Married</p>
+          <h1 id="invite-title">Mr Jefferey<br />&amp;<br />Ms Ying Shya</h1>
+          <p class="cover-date">15.09.2026</p>
+          <a class="scroll-cue" href="#rsvp">Open Invitation</a>
+        </div>
+      </section>
+
+      <section class="panel intro-panel">
+        <p class="kicker">Invitation</p>
+        <h2>With joyful hearts, we invite you to celebrate our wedding.</h2>
+        <p class="soft-copy">
+          Your presence will make our day warmer, happier, and more meaningful.
+        </p>
+      </section>
+
+      <section class="panel countdown-panel" aria-labelledby="countdown-title">
+        <p class="kicker">Counting Down</p>
+        <h2 id="countdown-title">Our Big Day</h2>
+        <div class="countdown" id="countdown">
+          <span><strong id="days">0</strong>Days</span>
+          <span><strong id="hours">0</strong>Hours</span>
+          <span><strong id="minutes">0</strong>Minutes</span>
+          <span><strong id="seconds">0</strong>Seconds</span>
+        </div>
+      </section>
+
+      <section class="panel details-panel" aria-label="Wedding details">
+        <div class="detail-card">
+          <span>Date</span>
+          <strong>Tuesday, 15 September 2026</strong>
+        </div>
+        <div class="detail-card">
+          <span>Time</span>
+          <strong>7:30 PM</strong>
+        </div>
+        <div class="detail-card">
+          <span>Venue</span>
+          <strong>No 18 Jalan Gamelan 3, Bandar Bukit Raja</strong>
+        </div>
+        <a
+          class="map-button"
+          href="https://maps.app.goo.gl/jNQiKobDNbttKvSEA"
+          target="_blank"
+          rel="noopener"
+        >
+          Open Map
+        </a>
+      </section>
+
+      <section class="panel gallery-panel" aria-label="Wedding photos">
+        <p class="kicker">Gallery</p>
+        <h2>Moments before forever</h2>
+        <div class="photo-stack">
+          <div class="photo-frame photo-frame--large"></div>
+          <div class="photo-frame"></div>
+        </div>
+      </section>
+
+      <section class="panel rsvp-panel" id="rsvp" aria-labelledby="rsvp-title">
+        <p class="kicker">RSVP</p>
+        <h2 id="rsvp-title">Are you coming?</h2>
+        <p class="soft-copy">
+          Please send your name and how many people will attend. WhatsApp will open with
+          the message ready.
+        </p>
+
+        <form class="rsvp-form" id="rsvpForm">
+          <label>
+            Name
+            <input id="guestName" name="guestName" type="text" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Number coming
+            <input
+              id="guestCount"
+              name="guestCount"
+              type="number"
+              min="1"
+              max="20"
+              value="1"
+              required
+            />
+          </label>
+
+          <label>
+            Blessing / message
+            <textarea
+              id="guestMessage"
+              name="guestMessage"
+              rows="3"
+              placeholder="Optional message"
+            ></textarea>
+          </label>
+
+          <button class="primary-button" type="submit">Send RSVP by WhatsApp</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </section>
+
+      <section class="panel host-panel" aria-labelledby="host-title">
+        <p class="kicker">Host List</p>
+        <h2 id="host-title">Local RSVP Test List</h2>
+        <p class="soft-copy">
+          Real replies arrive in WhatsApp. This list only saves submissions made on this
+          device.
+        </p>
+
+        <div class="host-summary">
+          <span><strong id="totalGuests">0</strong>Total pax</span>
+          <span><strong id="totalReplies">0</strong>Replies</span>
+        </div>
+
+        <div class="host-actions">
+          <button class="secondary-button" id="downloadCsv" type="button">Download CSV</button>
+          <button class="secondary-button secondary-button--danger" id="clearResponses" type="button">
+            Clear
+          </button>
+        </div>
+
+        <div class="response-list" id="responsesBody"></div>
+        <p class="empty-state" id="emptyState">No local responses yet.</p>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
